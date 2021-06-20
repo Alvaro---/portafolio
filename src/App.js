@@ -1,9 +1,13 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './components/NavBar'
+import { LangProvider } from "./context/LangContext";
 
 function App() {
   return (
-    <h2>Portafoliop</h2>
+    <LangProvider>
+      <NavBar />
+    </LangProvider>
   );
 }
 

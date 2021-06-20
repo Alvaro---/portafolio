@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+/* ***************** FONTS ********************* */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@400;600&display=swap');
+body {
+  font-family: 'Big Shoulders Stencil Display', cursive !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-white: #ffffff;
+  --gray: #a4b0be;
+  --black: #2f3542;
+  --secondary-green:#7bed9f;
+  --primary-green: #2ed573;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ***************** NAVBAR ********************* */
+
+.imgLogo {
+  width: 11rem;
+  border-radius: 15px;
+  height: 5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar a.nav-link {
+  font-weight: 600;
+  font-size: x-large;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: var(--gray) !important;
+  margin-right: 0.5rem !important;
+  margin-left: 0.5rem !important;
 }
 
-.App-link {
-  color: #61dafb;
+.titleNav {
+  font-weight: 600 !important;
+  font-size: x-large !important;
+  letter-spacing: 0.1rem;
+  color: var(--gray) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.titleNav:hover {
+  color: var(--primary-white) !important;
+}
+
+.dropdown-item, .dropdown-menu {
+  background-color: var(--black) !important;
+  border: none !important
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.ariaBtn {
+  font-weight: 600 !important;
+  font-size: x-large !important;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: var(--gray) !important;
+  margin-right: 0.5rem !important;
+  margin-left: 0.5rem !important;
+}
+
+.navbar a.nav-link:hover {
+  color: var(--primary-white) !important;
+  border-top: 0.18rem solid var(--secondary-green) !important;
+}
+
+.navbar a.nav-link.active {
+  color: var(--primary-white) !important;
+  border-top: 0.18rem solid var(--primary-green) !important;
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0;
+  height: 6rem;
+}
+
+.color-nav{
+  background-color: var(--black);
 }
