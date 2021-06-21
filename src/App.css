@@ -1,10 +1,27 @@
 /* ***************** FONTS ********************* */
 
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
-body {
-  font-family: 'Big Shoulders Stencil Display', cursive !important;
+@font-face {
+  font-family: 'Titles';
+  src: local('Cairo'), url(./fonts/Cairo-Regular.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'BigShoulders';
+  src: local('BigShoulders'), url(./fonts/BigShouldersStencilDisplay-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Texts';
+  src: local('Stint'), url(./fonts/StintUltraCondensed-Regular.ttf) format('truetype');
+}
+
+
+
+body {
+  font-family: 'BigShoulders', cursive !important;
+}
+
+
 
 :root {
   --primary-white: #ffffff;
@@ -15,6 +32,11 @@ body {
   --primary-blue: #70a1ff;
   --primary-red: #ff6b81;
   --primary-hover-red: #ff4757;
+}
+
+html {
+  overflow: -moz-scrollbars-vertical; 
+  overflow-y: scroll;
 }
 
 /* ***************** NAVBAR ********************* */
@@ -122,7 +144,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Stint Ultra Condensed', cursive;
+  font-family: 'Titles', cursive;
   font-size: x-large;
   letter-spacing: 0.1rem;
   z-index: 11;
@@ -138,7 +160,7 @@ body {
 .typed-text {
   font-size: 2rem;
   color: var(--primary-white);
-  font-family: 'Stint Ultra Condensed', cursive;
+  font-family: 'Titles', cursive;
   font-size: x-large;
   letter-spacing: 0.1rem;
 }
@@ -154,13 +176,13 @@ body {
   color: var(--primary-white);
   background-color: var(--primary-hover-red);
   margin: 2rem;
-  font-family: 'Stint Ultra Condensed', cursive;
+  font-family: 'Titles', cursive;
   font-size: x-large;
   letter-spacing: 0.1rem;
   z-index: 15 !important;
 }
 
-.btn-main-offer:hover{
+.btn-main-offer:hover {
   text-decoration: none;
   background-color: var(--primary-red);
   transition: 0.2s ease-in-out;
@@ -168,14 +190,74 @@ body {
   z-index: 15 !important;
 }
 
-
 /******************   PARTICLES  *************************/
 
-.tsparticles-canvas-el{
+.tsparticles-canvas-el {
   position: absolute;
   height: 100vh;
   width: 100vW;
   z-index: 11 !important;
 }
 
+/******************   PARTICLES  *************************/
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  background-color: var(--primary-white);
+  color: var(--black);
+  border-top: var(--primary-green);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Titles', cursive;
+}
+
+.iconosSociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 10px;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+/* **************************** about *******************/
+
+.aboutDescription{
+  font-family: "Texts";
+  font-size: 30px;
+  align-content: center;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 40px;
+}
+
+.about{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 

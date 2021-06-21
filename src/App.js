@@ -2,34 +2,41 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar'
 import { LangProvider } from "./context/LangContext";
-import Particles from "react-particles-js";
 import Header from './components/Header';
-import { faSquare } from '@fortawesome/free-solid-svg-icons';
+import SocialNetweork from './components/SocialNetweork';
+import { Route, Switch, useLocation } from 'react-router-dom'
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import About from './components/About';
+import Services from './components/Services';
+import Contact from './components/Contact';
+import Projects from './components/Projects';
+
 
 function App() {
+
+  const location = useLocation()
+
   return (
     <LangProvider>
-      <NavBar />
-      <Particles
-        params={{
-          particles: {
-            number: {
-              value: 30,
-              density: {
-                enable: true,
-                value_area: 900
+        <NavBar />
+        
+        <span id="home" />
+        <Header />
+        <SocialNetweork />
 
-              }
-            },
-            shape:{
-              type: faSquare,
-            }
-          }
-        }}
-      />
-      <Header />
+        <span id="about" />
+        <About />
+        
+        <span id="services" />
+        <Services />
 
-    </LangProvider>
+        <span id="proyects" />
+        <Projects />
+
+        <span id="contact" />
+        <Contact />
+
+    </LangProvider >
   );
 }
 

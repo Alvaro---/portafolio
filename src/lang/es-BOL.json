@@ -13,5 +13,20 @@
 
     "tags1": "Diseño y desarrollo Web",
     "tags2": "Aplicaciones moviles",
-    "tags3": "Bases de Datos"
+    "tags3": "Bases de Datos",
+
+    "contact":"Contacto",
+
+    "aboutTitle": "Sobre mi",
+    "description": "Mi nombre es Alvaro Mercado. Soy programador de aplicaciones Web y moviles con distintas tecnologias. \n Principalmente trabajo con JavaScript \n Me apasiona distintos tipos de retos. ",
+    "cvDownload": "Descargar Curriculum",
+    "servicesTitle": "Servicios",
+    "servicesParagraph": "Diseño y desarrollo de sistemas web dinamicos con bases de datos..",
+
+    "aboutProyectos":"Proyectos",
+    "aboutText":"Proyectos realizados...",
+
+    "contantTitle":"Contacto",
+    "contactText":"Numeros de contacto..."
+
 }
