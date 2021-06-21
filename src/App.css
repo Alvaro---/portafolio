@@ -1,6 +1,7 @@
 /* ***************** FONTS ********************* */
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
 body {
   font-family: 'Big Shoulders Stencil Display', cursive !important;
 }
@@ -9,8 +10,11 @@ body {
   --primary-white: #ffffff;
   --gray: #a4b0be;
   --black: #2f3542;
-  --secondary-green:#7bed9f;
+  --secondary-green: #7bed9f;
   --primary-green: #2ed573;
+  --primary-blue: #70a1ff;
+  --primary-red: #ff6b81;
+  --primary-hover-red: #ff4757;
 }
 
 /* ***************** NAVBAR ********************* */
@@ -66,6 +70,7 @@ body {
 .navbar a.nav-link:hover {
   color: var(--primary-white) !important;
   border-top: 0.18rem solid var(--secondary-green) !important;
+  transition: border-top .2s;
 }
 
 .navbar a.nav-link.active {
@@ -79,6 +84,98 @@ body {
   height: 6rem;
 }
 
-.color-nav{
+.color-nav {
   background-color: var(--black);
 }
+
+/* ***************** HEADER ********************* */
+
+.header-wrapper {
+  position: relative;
+  background: url(./images/computer3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  opacity: 1.5;
+  background-color: black;
+}
+
+.header-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Stint Ultra Condensed', cursive;
+  font-size: x-large;
+  letter-spacing: 0.1rem;
+  z-index: 11;
+}
+
+.main-info h1 {
+  color: var(--primary-green);
+  text-transform: uppercase;
+}
+
+/****************** TYPED TEXT *************************/
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+  font-family: 'Stint Ultra Condensed', cursive;
+  font-size: x-large;
+  letter-spacing: 0.1rem;
+}
+
+/****************** HEADER MAIN OFFER *************************/
+
+.btn-main-offer {
+  text-decoration: none;
+  border: 1PX solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  background-color: var(--primary-hover-red);
+  margin: 2rem;
+  font-family: 'Stint Ultra Condensed', cursive;
+  font-size: x-large;
+  letter-spacing: 0.1rem;
+  z-index: 15 !important;
+}
+
+.btn-main-offer:hover{
+  text-decoration: none;
+  background-color: var(--primary-red);
+  transition: 0.2s ease-in-out;
+  color: var(--primary-white);
+  z-index: 15 !important;
+}
+
+
+/******************   PARTICLES  *************************/
+
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vW;
+  z-index: 11 !important;
+}
+
+

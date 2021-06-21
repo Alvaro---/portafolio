@@ -47,12 +47,8 @@ const LangProvider = ({ children }) => {
         }
     }
 
-    useEffect(() => {
-        console.log(messages)
-    })
-
     const state = {
-        establecerLenguaje: establecerLenguaje
+        establecerLenguaje: establecerLenguaje,
         //locale: [locale, setLocale],
         //message: [messages, setMessages]
     }
