@@ -8,7 +8,7 @@ import { Card } from "react-bootstrap";
 const Projects = () => {
     const lang = useContext(LangContext)
     return (
-        <Container className="aboutDescription">
+        <div className="aboutDescription">
             <h2><FormattedMessage id="aboutProyectos" defaultMessage="Home" /></h2>
             <div>
                 <Card>
@@ -22,7 +22,7 @@ const Projects = () => {
                     </Card.Body>
                 </Card>
             </div>
-        </Container>
+        </div>
     )
 }
 

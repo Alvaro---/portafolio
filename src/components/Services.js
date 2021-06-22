@@ -22,7 +22,7 @@ import { faReact } from '@fortawesome/free-brands-svg-icons'
 const Services = () => {
     const lang = useContext(LangContext)
     return (
-        <Container className="aboutDescription">
+        <div className="aboutDescription">
             <h2>
                 <FormattedMessage id="servicesTitle" defaultMessage="Servicios" />
             </h2>
@@ -137,7 +137,7 @@ const Services = () => {
 
             </div>
 
-        </Container>
+        </div>
     )
 }
 

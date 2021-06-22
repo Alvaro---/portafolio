@@ -10,7 +10,7 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const Contact = () => {
     const lang = useContext(LangContext)
     return (
-        <Container className="aboutDescription">
+        <div className="aboutDescription">
             <h2><FormattedMessage id="contantTitle" defaultMessage="Home" /></h2>
             <div className="Contacto">
                 <div>
@@ -20,7 +20,7 @@ const Contact = () => {
                     <FontAwesomeIcon icon={faEnvelope} /> alvaroawake@gmail.com - alvaro.mercado.valle@gmail.com
                 </div>
             </div>
-        </Container>
+        </div>
     )
 }
 
