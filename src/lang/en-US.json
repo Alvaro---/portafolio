@@ -15,5 +15,15 @@
     "tags2": "Mobile Apps",
     "tags3": "Data Bases",
 
-    "contact":"Contact"
+    "contact":"Contact",
+
+    "aboutTitle": "About me",
+    "description": "I am a person with a great capacity for self-learning. \n Throughout my life I worked in different areas and I was able to develop different skills, trying to maintain a constant training. I am passionate about the work that I do and I try to relate the knowledge of my profession with the different activities that I have",
+    "cvDownload": "Download C.V",
+    "servicesTitle": "Services",
+    "servicesParagraph": "Design and development of dynamic web systems with different tools.",
+    "aboutProyectos": "Projects",
+    "aboutText": "Proyectos realizados...",
+    "contantTitle": "Contact",
+    "contactText": "Contact numbers"
 }

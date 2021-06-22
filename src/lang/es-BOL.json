@@ -12,13 +12,14 @@
     "tags2": "Aplicaciones moviles",
     "tags3": "Bases de Datos",
     "contact": "Contacto",
+
     "aboutTitle": "Sobre mi",
     "description": "Soy una persona con una gran capacidad de autoaprendizaje. \n A lo largo de mi vida trabajé en distintas áreas y pude desarrollar diferentes habilidades, tratando de mantener una formación constante. Me apasiono por los trabajos que realizo y trato de relacionar los conocimientos de mi profesión con las distintas actividades que tengo",
     "cvDownload": "Descargar Curriculum",
     "servicesTitle": "Servicios",
     "servicesParagraph": "Diseño y desarrollo de sistemas web dinamicos con distintas herramientas.",
     "aboutProyectos": "Proyectos",
-    "aboutText": "Proyectos realizados...",
+    "aboutText": "Proyectos realizados",
     "contantTitle": "Contacto",
-    "contactText": "Numeros de contacto..."
+    "contactText": "Numeros de contacto"
 }
