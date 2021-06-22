@@ -18,24 +18,52 @@ function App() {
 
   return (
     <LangProvider>
-        <NavBar />
-        
-        <span id="home" />
-        <Header />
-        <SocialNetweork />
+      <NavBar />
 
-        <span id="about" />
-        <About />
-        
-        <span id="services" />
-        <Services />
 
-        <span id="proyects" />
-        <Projects />
+      <div className="Contenido">
+        <section id="home">
+          <span id="home" />
+          <hr />
+          <hr />
+          <hr />
+          <Header />
+          <SocialNetweork />
+        </section>
 
-        <span id="contact" />
-        <Contact />
+        <section id="about">
+          <span id="about" />
+          <hr />
+          <hr />
+          <hr />
+          <About />
+        </section>
 
+        <section id="services">
+          <span id="services" />
+          <hr />
+          <hr />
+          <hr />
+          <Services />
+        </section>
+
+{/*
+        <section id="proyects">
+          <span id="proyects" />
+          <hr />
+          <hr />
+          <hr />
+          <Projects />
+        </section>
+*/}
+        <section id="contact">
+          <span id="contact" />
+          <hr />
+          <hr />
+          <hr />
+          <Contact />
+        </section>
+      </div>
     </LangProvider >
   );
 }

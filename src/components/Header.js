@@ -38,7 +38,7 @@ const Header = () => {
                     typeSpeed={40}
                     backSpeed={60}
                     loop />
-                <a href="#" className="btn-main-offer"><FormattedMessage id="contact" defaultMessage="contact" /></a>
+                <a href="#contact" className="btn-main-offer"><FormattedMessage id="contact" defaultMessage="contact" /></a>
             </div>
         </div>
     )

@@ -2,7 +2,8 @@ import React from 'react'
 
 // get our fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faLinkedin, faWhatsapp, faGithub } from '@fortawesome/free-brands-svg-icons'
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 
 const SocialNetweork = () => {
     return (
@@ -19,7 +20,16 @@ const SocialNetweork = () => {
                     </a>
                     -
                     <a href="https://wa.link/t5gyv7">
-                        <FontAwesomeIcon icon={faWhatsapp} /> </a>
+                        <FontAwesomeIcon icon={faWhatsapp} />
+                    </a>
+                    -
+                    <a href="https://github.com/Alvaro---">
+                        <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                    -
+                    <a href="mailto:alvaro.mercado.valle@gmail.com">
+                        <FontAwesomeIcon icon={faEnvelope} />
+                    </a>
                 </p>
             </div>
         </div>

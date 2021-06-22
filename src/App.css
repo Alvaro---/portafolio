@@ -15,16 +15,9 @@
   src: local('Stint'), url(./fonts/StintUltraCondensed-Regular.ttf) format('truetype');
 }
 
-
-
-body {
-  font-family: 'BigShoulders', cursive !important;
-}
-
-
-
 :root {
   --primary-white: #ffffff;
+  --secondary-white: #dfdfdf;
   --gray: #a4b0be;
   --black: #2f3542;
   --secondary-green: #7bed9f;
@@ -34,21 +27,34 @@ body {
   --primary-hover-red: #ff4757;
 }
 
+body {
+  font-family: 'BigShoulders', cursive !important;
+  background-color: var(--secondary-white) !important;
+}
+
 html {
-  overflow: -moz-scrollbars-vertical; 
+  overflow: -moz-scrollbars-vertical;
   overflow-y: scroll;
 }
 
 /* ***************** NAVBAR ********************* */
 
+.Contenido {}
+
+hr {
+  clear: both;
+  visibility: hidden;
+}
+
 .imgLogo {
-  width: 11rem;
+  width: 10rem;
   border-radius: 15px;
-  height: 5rem;
+  height: 4rem;
+  margin-top: -10px;
 }
 
 .navbar a.nav-link {
-  font-weight: 600;
+  font-weight: 500;
   font-size: x-large;
   letter-spacing: 0.1rem;
   cursor: pointer;
@@ -59,7 +65,7 @@ html {
 }
 
 .titleNav {
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   font-size: x-large !important;
   letter-spacing: 0.1rem;
   color: var(--gray) !important;
@@ -103,7 +109,7 @@ html {
 .navbar-brand {
   max-width: 17.25rem;
   padding: 0;
-  height: 6rem;
+  height: 3.5rem;
 }
 
 .color-nav {
@@ -153,6 +159,15 @@ html {
 .main-info h1 {
   color: var(--primary-green);
   text-transform: uppercase;
+}
+
+
+.iconosSociales a{
+  color: var(--gray);
+}
+
+.iconosSociales a:hover{
+  color: var(--black);
 }
 
 /****************** TYPED TEXT *************************/
@@ -240,7 +255,8 @@ html {
 
 /* **************************** about *******************/
 
-.aboutDescription{
+.aboutDescription {
+  padding-top: 20px;
   font-family: "Texts";
   font-size: 30px;
   align-content: center;
@@ -250,7 +266,7 @@ html {
   margin: 40px;
 }
 
-.about{
+.about {
   display: flex;
   flex-direction: row;
   padding-bottom: 20px;
@@ -261,3 +277,31 @@ html {
   text-align: center;
 }
 
+/**************SERVICES *****************************************/
+
+.tab {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tab .card {
+  align-self: center;
+  flex-grow: 1;
+  width: 15rem;
+  margin: 10px;
+}
+
+.tab .card img {
+  max-width: 12rem;
+  height: 8rem;
+}
+
+.Contacto Form {
+  font-family: "text";
+  font-size: xx-large;
+  font-weight: bold;
+}

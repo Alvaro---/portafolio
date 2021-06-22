@@ -4,6 +4,7 @@ import { FormattedMessage } from 'react-intl'
 import { LangContext } from '../context/LangContext'
 import foto from '../cv/foto.PNG'
 
+
 const About = () => {
     const lang = useContext(LangContext)
     return (
@@ -16,6 +17,7 @@ const About = () => {
             <div>
                 <a href='./cv/cv.pdf' download className="btn-main-offer"><FormattedMessage id="cvDownload" defaultMessage="Download CV" /></a>
             </div>
+            
         </Container>
     )
 }
